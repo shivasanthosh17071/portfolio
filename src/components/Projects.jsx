@@ -13,7 +13,7 @@ export default function Projects({ isVisible }) {
       tech: ["React", "Node.js", "Express","Bootstrap"],
       image: Swiggy,
       github: "https://github.com/shivasanthosh17071/swiggy-main",
-      demo: "https://swiggy-nl9i.onrender.com/",
+      demo: "https://santhoshswiggy.onrender.com/",
     },
     {
       title: "BlackNykee Shopping",
