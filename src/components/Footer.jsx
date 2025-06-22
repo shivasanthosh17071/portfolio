@@ -158,7 +158,7 @@ export default function Footer() {
             <a href="#" className="text-secondary small">Privacy</a>
             <a href="#" className="text-secondary small">Terms</a>
             <a
-              href="https://github.com/your-github-username"
+              href="https://github.com/shivasanthosh17071 "
               className="text-secondary small"
               target="_blank"
             >

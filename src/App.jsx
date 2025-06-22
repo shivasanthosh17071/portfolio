@@ -11,6 +11,8 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+import CodingChallengeWidget from './components/CodingChallengeWidget';
+
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
   const [isVisible, setIsVisible] = useState({});
@@ -59,27 +61,28 @@ export default function App() {
         }}
       ></div>
 
-    <div
+    <div className='bg-light'
   style={{
     position: "fixed",
     top: 0,
     left: 0,
     width: "100%",
     height: "100%",
-    background:
-      "linear-gradient( 90deg,rgba(0, 183, 255, 0.06) 0%,rgb(255, 255, 255) 50%,rgba(230, 0, 255, 0.11) 100%)",
     zIndex: -1,
     
   }}
 ></div>
 
 
+
       {/* Page Sections */}
       <Navbar activeSection={activeSection} />
+    
       <Hero isVisible={isVisible.home} />
       <About isVisible={isVisible.about} />
       <Skills isVisible={isVisible.skills} />
       <Projects isVisible={isVisible.projects} />
+      <CodingChallengeWidget/>
       <Contact isVisible={isVisible.contact} />
       <Footer />
       
@@ -101,6 +104,7 @@ export default function App() {
             
         `}
       </style>
+      <script src="//code.tidio.co/0lun5v29dlm6ff9awt6v7njnpfic5ujf.js" async></script>
     </div>
   );
 }
