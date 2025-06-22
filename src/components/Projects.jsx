@@ -13,7 +13,7 @@ export default function Projects({ isVisible }) {
       tech: ["React", "Node.js", "Express","Bootstrap"],
       image: Swiggy,
       github: "https://github.com/shivasanthosh17071/swiggy-main",
-      demo: "https://swiggy-nl9i.onrender.com/",
+      demo: "https://santhoshswiggy.vercel.app/",
     },
     {
       title: "BlackNykee Shopping",
@@ -22,7 +22,7 @@ export default function Projects({ isVisible }) {
       tech: ["React", "Node.js", "MongoDb","Express.js","Bootstrap"],
       image: BlackNykee,
       github: "https://github.com/shivasanthosh17071/blacknykee",
-      demo: "https://blacknykee.onrender.com/",
+      demo: "https://blacknykee.vercel.app/",
     },
     {
       title: "SS Herbal Beauty",
