@@ -40,7 +40,7 @@ export default function About({ isVisible }) {
 </div>
 
               <p className="lead mb-3" style={{ color: "#4a5568" }}>
-                I'm a passionate <strong>Full Stack Web Developer</strong> with 1.5+ years of experience building responsive web apps that solve real problems and deliver elegant user experiences.
+                I'm a passionate <strong>Full Stack Web Developer</strong> with 1 years of experience building responsive web apps that solve real problems and deliver elegant user experiences.
               </p>
               <p style={{ color: "#718096" }}>
                 Outside of coding, I love experimenting with new tech, contributing to open-source projects, and sketching ideas with a coffee in hand. Clean, maintainable code and design that connects — that's my thing.

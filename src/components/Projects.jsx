@@ -3,9 +3,29 @@ import { Github, ExternalLink } from "lucide-react";
 import Swiggy from "../assets/images/swiggy.png";
 import SSherbal from "../assets/images/SS-herbal.png";
 import BlackNykee from "../assets/images/blacknykee.png";
+import Hkselfdrivecars from"../assets/images/hkselfdrivecars.jpg"
+import Echologicstechnopark from"../assets/images/echologicstechnopark.jpg"
 
 export default function Projects({ isVisible }) {
   const projects = [
+      {
+    title: "HK Self Drive Cars",
+    description:
+      "A car rental platform built for HK Self Drive Cars, enabling users to easily browse, filter, and book vehicles for rent. Developed using the MERN stack with JWT authentication, booking management, and a clean, responsive UI powered by React and Bootstrap.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Bootstrap"],
+    image: Hkselfdrivecars, 
+    // github: "https://github.com/shivasanthosh17071",
+    demo: "https://hkselfdrivecars.com/",
+  },
+   {
+    title: "Echologics Techno Park",
+    description:
+      "The official website for Echologics Techno Park, a software testing startup offering manual, automation, performance, and API testing services. Built with React and Bootstrap, featuring sections like About, Mission, Vision, and Contact, with a professional, responsive layout that reflects reliability and innovation.",
+    tech: ["React + Vite", "Bootstrap"],
+    image: Echologicstechnopark, // import at top: import Echologics from './path/to/echologics.jpg';
+    // github: "https://github.com/shivasanthosh17071/echologics",
+    demo: "https://echologicstechnopark.com/",
+  },
     {
       title: "Swiggy-Clone-App",
       description:
@@ -15,15 +35,15 @@ export default function Projects({ isVisible }) {
       github: "https://github.com/shivasanthosh17071/swiggy-main",
       demo: "https://santhoshswiggy.vercel.app/",
     },
-    {
-      title: "BlackNykee Shopping",
-      description:
-        "A stylish fashion brand website built with React + Vite and Bootstrap, designed to showcase modern apparel collections. Features include responsive layouts, smooth navigation, collection highlights, and a visually rich UI that reflects the brand’s bold identity.",
-      tech: ["React", "Node.js", "MongoDb","Express.js","Bootstrap"],
-      image: BlackNykee,
-      github: "https://github.com/shivasanthosh17071/blacknykee",
-      demo: "https://blacknykee.vercel.app/",
-    },
+    // {
+    //   title: "BlackNykee Shopping",
+    //   description:
+    //     "A stylish fashion brand website built with React + Vite and Bootstrap, designed to showcase modern apparel collections. Features include responsive layouts, smooth navigation, collection highlights, and a visually rich UI that reflects the brand’s bold identity.",
+    //   tech: ["React", "Node.js", "MongoDb","Express.js","Bootstrap"],
+    //   image: BlackNykee,
+    //   github: "https://github.com/shivasanthosh17071/blacknykee",
+    //   demo: "https://blacknykee.vercel.app/",
+    // },
     {
       title: "SS Herbal Beauty",
       description:
@@ -34,15 +54,7 @@ export default function Projects({ isVisible }) {
       github: "https://github.com/shivasanthosh17071/ss-herbal",
       demo: "https://ss-herbal.vercel.app/",
     },
-    // {
-    //   title: "Social Media Analytics",
-    //   description:
-    //     "Analytics dashboard for social media metrics with data visualization, reporting features, and automated insights.",
-    //   tech: ["React", "D3.js", "Node.js", "MongoDB"],
-    //   image: "/placeholder.svg?height=200&width=300",
-    //   github: "https://github.com",
-    //   demo: "https://demo.com",
-    // },
+    
   ];
 
   const techColors = {
@@ -153,6 +165,7 @@ export default function Projects({ isVisible }) {
                     ))}
                   </div>
                   <div className="d-flex gap-2">
+                  {project?.github ?
                     <a
                       href={project.github}
                       target="_blank"
@@ -165,8 +178,9 @@ export default function Projects({ isVisible }) {
                     >
                       <Github size={16} className="me-1" />
                       Code
-                    </a>
-                    <a
+                    </a>:
+                    <div className="w-50"> </div>} 
+                  {project.demo && <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -182,7 +196,8 @@ export default function Projects({ isVisible }) {
                     >
                       <ExternalLink size={16} className="me-1" />
                       Demo
-                    </a>
+                    </a>}
+                    
                   </div>
                 </div>
               </div>
