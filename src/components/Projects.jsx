@@ -35,15 +35,15 @@ export default function Projects({ isVisible }) {
       github: "https://github.com/shivasanthosh17071/swiggy-main",
       demo: "https://santhoshswiggy.vercel.app/",
     },
-    // {
-    //   title: "BlackNykee Shopping",
-    //   description:
-    //     "A stylish fashion brand website built with React + Vite and Bootstrap, designed to showcase modern apparel collections. Features include responsive layouts, smooth navigation, collection highlights, and a visually rich UI that reflects the brand’s bold identity.",
-    //   tech: ["React", "Node.js", "MongoDb","Express.js","Bootstrap"],
-    //   image: BlackNykee,
-    //   github: "https://github.com/shivasanthosh17071/blacknykee",
-    //   demo: "https://blacknykee.vercel.app/",
-    // },
+    {
+      title: "BlackNykee Shopping",
+      description:
+        "BlackNyke is a modern fashion brand website built with React + Vite and Bootstrap, designed to showcase premium men’s apparel. It features a responsive layout, smooth navigation, and visually engaging sections that reflect the brand’s bold and elegant style.",
+      tech: ["React", "Node.js", "MongoDb","Express.js","Bootstrap"],
+      image: BlackNykee,
+      github: "https://github.com/shivasanthosh17071/ecomF.git",
+      demo: "https://blacknykee.santhoshdev.space",
+    },
     {
       title: "SS Herbal Beauty",
       description:
